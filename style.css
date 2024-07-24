@@ -1,0 +1,431 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+nav span{
+    color: black;
+}
+span:hover{
+    color: orangered;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 0px;
+}
+
+nav header{
+    color: orangered;
+    width: 40%;
+    padding: 5px 10%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    font-size: large;
+}
+nav li{
+    position: relative;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+nav li a::after{
+    content: '';
+    background-color: orangered;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+nav li a:hover::after{
+    opacity: 1;
+}
+nav li a:hover{
+    color: orangered;
+}
+
+.slideshow{
+    padding: 0px 10%;
+    color: white;
+    font-size: xx-large;
+    position: relative;
+    height: 90vh;
+    background-image: url(images/slideshow/team-meeting-renewable-energy-project.jpeg);
+}
+
+.det{
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+}
+
+.det button{
+    padding: 20px;
+    width: 30%;
+    border: 1px solid transparent;
+    color: white;
+    background-color: black;
+    font-size: large;
+    border-radius: 50px;
+}
+.det button:hover{
+    background-color: orangered;
+}
+
+h1{
+    font-size: 60px;
+}
+.getstarted h1{
+    text-align: center;
+}
+.getstarted span,.retail span{
+    color: orangered;
+}
+
+.gsdet{
+    width: 100%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gsdet img{
+    width: 50%;
+}
+
+.retailshop{
+    margin: 5% auto;
+    background-color: rgba(0, 153, 255, 0.2);
+    width: 100%;
+}
+
+.klam,.retail{
+    font-size: x-large;
+    width: 40%;
+    line-height: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.klam a::after,.retail a::after{
+    content: ' ->';
+    color: orangered;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+.klam a:hover,.retail a:hover{
+    color: orangered;
+}
+.klam a:hover::after,.retail a:hover::after{
+    opacity: 1;
+}
+
+.retailshop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.retailshop img{
+    float: left;
+    width:50%;
+}
+
+.retail{
+    margin: auto;
+}
+
+.featured{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured h1{
+    text-align: center;
+    font-size: 48px;
+}
+.featured img{
+    width: 100%;
+}
+.featured a{
+    font-size: medium;
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    font-weight: bolder;
+    transition: 1s ease-in;
+}
+.featured a:hover{
+    color: orangered;
+}
+.featured a:hover::after{
+    background-color: orangered;
+}
+
+.featured a::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+.prod{
+    width: 30%;
+}
+.products{    
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+
+.prodes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.data{
+    padding: 40px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data p{
+    color: white;
+    margin: auto 0px;
+}
+.data p:hover{
+    color: orangered;
+}
+.data h5{
+    display: inline;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid transparent;
+}
+
+footer{
+    padding: 5%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brief{
+    display: flex;
+    flex-flow:nowrap column;
+    width: 30%;
+}
+
+.map ul{
+    padding:10px;
+    list-style-type: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-flow:wrap row;
+}
+
+.map li a{
+    margin: 0px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: grey;
+}
+.map li a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cp{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 153, 255, 0.2);
+}
+
+.cp h1{
+    margin: 0px auto;
+    align-self: center;
+}
+
+.cp span,.team span{
+    color: orangered;
+}
+
+.cp img{
+    width: 50%;
+}
+
+.team{
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 5%;
+}
+
+.team h1{
+    text-align: left;
+}
+
+.mmbs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mmbr{
+    padding: 20px 10px;
+    width: 30%;
+    background-color: white;
+}
+
+.mmbr img{
+    float: left;
+    width: 30%;
+    border: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.mmde{
+    position: relative;
+    left: 5%;
+}
+
+.mmbr p{
+    margin-top: 40px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+
+.mmbr:hover p{
+    opacity: 1;
+}
+
+.clr{
+    clear: left;
+}
+
+.fav{
+    padding: 10% 0px;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+form input,textarea{
+    padding: 20px 20px;
+    margin: 20px 0px;
+    display: block;
+    outline: none;
+}
+
+form button{
+    color: white;
+    font-size: large;
+    background-color: black;
+    margin-top: 20px;
+    width: 25%;
+    height: 40px;
+    outline: invert;
+    border: transparent;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+form button:hover{
+    background-color: orangered;
+}
+
+td{
+    width: 40%;
+    height: 40%; 
+    padding: 20px;  
+}
+
+table p{
+    width: 80%;
+}
+
+.signin{
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+}
+.signin button{
+    width: 60%;
+    height: 10%;
+    padding: 20px 0px;
+    align-self: center;
+    font-size: 30px;
+}
+.signin p{
+    display: inline;
+}
+.signin a:hover{
+    color: orangered;
+}

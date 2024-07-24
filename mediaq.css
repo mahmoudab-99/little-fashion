@@ -1,0 +1,129 @@
+@media screen and (max-width:1200px){    
+    nav header{
+        width: 45%;
+    }
+    .det button{
+        width: 80%;
+    }
+    .data{
+        width: 100%;
+    }
+    .featured a{
+        bottom: 2%;
+    }
+    .cp img{
+        width: 60%;
+    }
+    .cp h1{
+        text-align: center;
+    }    
+    form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px){
+    nav{
+        flex-flow: column nowrap;
+    }
+    nav header{
+        padding: 0px 20px;
+        width: 80%;
+    }
+    nav ul{
+        margin: 20px 0px;
+        width: 90%;
+    }
+    .det{
+        width: 40%;
+        bottom: 10%;
+    }
+    .gsdet{
+        flex-flow: column nowrap;
+    } 
+    .gsdet img{
+        width: 80%;
+        align-self: center;
+    }
+    .klam{
+        width: 80%;
+    }
+    .data{
+        padding: 10px;
+    }
+    .featured img{
+        width: 100%;
+    }
+    .prod{
+        width: 45%;
+    }
+    .prod p{
+        font-weight: lighter;
+        font-size: medium;
+    }
+    .cp{
+        flex-flow: column;
+        align-items: center;
+    }
+    .mmbs{
+        align-content: space-evenly;
+        flex-flow: column wrap;
+    }
+    .mmbr{
+        align-self: center;
+        width: 80%;
+        margin: 20px 0px;
+    }
+}
+
+@media screen and (max-width:768px){
+    h1{
+        padding: 20px 10px;
+        font-size: xx-large;
+    }
+    .prod h2{
+        font-size: medium;
+    }
+    .det{
+        font-size: large;
+    }
+    .retailshop{
+        flex-flow: wrap column;
+    }
+    .retailshop img{
+        width: 100%;
+    }
+    .retail{
+        margin: 0px;
+        width: 100%;
+    }
+    .featured a{
+        padding: 10px 0px;
+        bottom: 10px;
+    }
+    .prod{
+        width: 70%;
+    }
+    footer{
+        flex-flow: column;
+    }
+    .brief{
+        width: 50%;
+    }
+    .map ul{
+        flex-flow:wrap column;
+    }
+    .map li{
+        padding: 5px 0px;
+    }
+    .cp{
+        flex-flow: wrap column;
+    }
+    .cp img{
+        padding: 40px 0px;
+        align-self: center;
+    }
+    form{
+        align-self: center;
+    }
+}
